@@ -20,7 +20,7 @@ fn test_increase_balance() {
     let dispatcher = IHelloStarknetDispatcher { contract_address };
 
     let balance_before = dispatcher.get_balance();
-    assert(balance_before == 0, 'Invalid balance');
+    assert(balance_before == 0, 'Invalid balances');
 
     dispatcher.increase_balance(42);
 
